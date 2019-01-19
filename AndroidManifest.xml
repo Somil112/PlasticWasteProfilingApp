@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.tensorflow.demo">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <application android:allowBackup="true"
+        android:debuggable="true"
+        android:label="@string/application_name"
+        android:icon="@mipmap/ic_launcher"
+        android:theme="@style/MaterialTheme"
+        >
+
+        <activity android:name="org.tensorflow.demo.DetectorActivity"
+                  android:screenOrientation="portrait"
+                  android:label="@string/application_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".storeData">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+    <action android:name="org.tensorflow.demo.showdata.LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".showGraph">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <action android:name="org.tensorflow.demo.showgraph.LAUNCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+    </application>
+
+
+</manifest>

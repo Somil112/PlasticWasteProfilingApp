@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+
+    android:background="#0336ff">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/textbox"
+        android:elevation="10px"
+        android:textSize="25dp"
+        android:id="@+id/currinfo"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:text="Objects Tracked"
+        android:textColor="@android:color/black"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/cocacola"
+            android:layout_below="@id/currinfo"
+
+            android:layout_marginTop="5dp"
+            android:padding="15dp"
+            android:text="Coca Cola: "
+            android:textStyle="bold"
+            android:elevation="10px"
+            android:layout_margin="15dp"
+            android:background="@drawable/textboxcocacola"
+            android:textColor="@android:color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:id="@+id/lays"
+        android:layout_below="@id/cocacola"
+        android:gravity=""
+        android:layout_marginTop="5dp"
+        android:padding="15dp"
+        android:text="Lays:"
+        android:textColor="@android:color/black"
+        android:layout_margin="15dp"
+        android:elevation="10px"
+        android:background="@drawable/textboxlays"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_below="@id/lays"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:text="SUBMIT"
+        android:background="@drawable/submit"
+        android:elevation="20px"
+        android:id="@+id/submitdata"
+        android:layout_marginTop="100dp"/>
+
+
+
+</RelativeLayout>
